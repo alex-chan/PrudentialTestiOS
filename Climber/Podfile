@@ -9,7 +9,8 @@ target 'Climber' do
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'Moya/RxSwift', '~> 14.0'
-
+  pod 'Moya-ObjectMapper/RxSwift'
+  pod 'Toast', '~> 4.0.0'
 
   target 'ClimberUITests' do
     # Pods for testing

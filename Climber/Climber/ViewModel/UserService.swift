@@ -47,9 +47,9 @@ extension UserService: TargetType {
         switch self {
       
         case .steps(let userId):
-            return "{\"id\": \(userId), \"first_name\": \"Harry\", \"last_name\": \"Potter\"}".utf8Encoded
+            return "{\"userId\": \(userId), \"nickName\": \"Harry\", \"email\": \"xxx@25.com\"}".utf8Encoded
         case .login(let email, let password):
-            return "{\"id\": 100, \"email\": \"\(email)\", \"password\": \"\(password)\"}".utf8Encoded
+            return "{\"userId\": \"2424\", \"nickName\": \"Harry\", \"avatarURL\": \"http://www.google.com\"}".utf8Encoded
         }
     }
     var headers: [String: String]? {
