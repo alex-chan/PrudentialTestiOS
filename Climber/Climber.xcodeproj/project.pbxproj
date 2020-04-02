@@ -20,6 +20,7 @@
 		FA45A6C124320B27003111CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA45A6C024320B27003111CC /* Assets.xcassets */; };
 		FA45A6C424320B27003111CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA45A6C224320B27003111CC /* LaunchScreen.storyboard */; };
 		FA45A6CF24320B28003111CC /* ClimberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45A6CE24320B28003111CC /* ClimberUITests.swift */; };
+		FA51F4C624364407000168AE /* ClimberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51F4C524364407000168AE /* ClimberTextField.swift */; };
 		FA7437CB2436355E00DB7998 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7437CA2436355D00DB7998 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		FA45A6CA24320B28003111CC /* ClimberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA45A6CE24320B28003111CC /* ClimberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimberUITests.swift; sourceTree = "<group>"; };
 		FA45A6D024320B28003111CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA51F4C524364407000168AE /* ClimberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimberTextField.swift; sourceTree = "<group>"; };
 		FA7437CA2436355D00DB7998 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 		FA368C0324358E3500450B3B /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				FA51F4C524364407000168AE /* ClimberTextField.swift */,
 			);
 			path = CustomControl;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				FA368C022434FA9200450B3B /* UserService.swift in Sources */,
 				FA45A6BC24320B22003111CC /* LoginViewController.swift in Sources */,
 				FA45A6B824320B22003111CC /* AppDelegate.swift in Sources */,
+				FA51F4C624364407000168AE /* ClimberTextField.swift in Sources */,
 				FA368C052435C0A900450B3B /* LoginViewModel.swift in Sources */,
 				FA368BFE2434F66E00450B3B /* User.swift in Sources */,
 				FA7437CB2436355E00DB7998 /* SceneDelegate.swift in Sources */,
@@ -533,7 +537,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FL2H8E474Y;
+				DEVELOPMENT_TEAM = JG46ZD4T83;
 				INFOPLIST_FILE = Climber/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,7 +557,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FL2H8E474Y;
+				DEVELOPMENT_TEAM = JG46ZD4T83;
 				INFOPLIST_FILE = Climber/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

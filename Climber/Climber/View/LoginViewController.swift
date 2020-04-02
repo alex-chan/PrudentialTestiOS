@@ -24,17 +24,40 @@ class LoginViewController: UIViewController {
     private let disposeBag = DisposeBag()
     
     private let SBID_SHOW_MAIN = "SBID_SHOW_MAIN"
+    private var offsetted = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureBindings()
+        setupUI()
     }
     
-    func configureBindings() {
+    func attributeString(_ textField: UITextField?) -> NSAttributedString {
+        return NSAttributedString(string: textField?.placeholder ?? "",
+                                  attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray,
+                                                         NSAttributedString.Key.font: textField?.font])
+    }
+    
+    func setupUI() {
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        let image = UIImage(named: "Component BG")
+        let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = image
+        self.view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
         
+        emailTextField.attributedPlaceholder = attributeString(emailTextField);
+        passwordTextField.attributedPlaceholder = attributeString(passwordTextField);
+        
+    }
+    func configureBindings() {
         viewModel = LoginViewModel()
         
-        emailTextField.rx.text.orEmpty
+        emailTextField.rx.text
+            .filter { $0 != nil }
+            .filter { $0!.count > 0 }
+            .debug()
             .bind(to: viewModel.email)
             .disposed(by: disposeBag)
         
@@ -53,7 +76,6 @@ class LoginViewController: UIViewController {
             .bind(onNext: viewModel.submit)
             .disposed(by: disposeBag)
         
-//        indicator.rx.
         viewModel.isLoading.asDriver()
 //            .drive(indicator.rx.animating)
         .debug()
@@ -80,10 +102,42 @@ class LoginViewController: UIViewController {
                 self.view.makeToast(msg, duration: 2.0, position: CSToastPositionCenter)
             })
             .disposed(by: disposeBag)
-            
-            
     }
+}
     
+extension LoginViewController: UITextFieldDelegate {
+    
+    
+    
+    func animateTextField(textField: UITextField, up: Bool) {
+        if up && offsetted {
+            return
+        }
+        offsetted = up
+        
+       let movementDistance:CGFloat = -280
+       let movementDuration: Double = 0.3
 
+       var movement:CGFloat = 0
+       if up {
+           movement = movementDistance
+       }else {
+           movement = -movementDistance
+       }
+       UIView.beginAnimations("animateTextField", context: nil)
+       UIView.setAnimationBeginsFromCurrentState(true)
+       UIView.setAnimationDuration(movementDuration)
+       self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+       UIView.commitAnimations()
+   }
+
+
+    func textFieldDidBeginEditing(_ textField: UITextField){
+        self.animateTextField(textField: textField, up:true)
+    }
+
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.animateTextField(textField: textField, up:false)
+    }
 }
 

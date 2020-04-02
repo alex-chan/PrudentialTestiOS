@@ -69,8 +69,4 @@ class LoginViewModel {
             }
         }.disposed(by:disposeBag)
     }
-    
-    func performMainSegue() {
-        
-    }
 }
