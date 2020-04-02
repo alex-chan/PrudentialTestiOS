@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		658C2FA643136415D4672D66 /* Pods_Climber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B7A662C32E0ED4BE584D19 /* Pods_Climber.framework */; };
+		E789E796B90DC9145C024A8D /* Pods_Climber_ClimberUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D45AAE7066DD64C5DA7F3AF /* Pods_Climber_ClimberUITests.framework */; };
+		FA368BFE2434F66E00450B3B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA368BFD2434F66E00450B3B /* User.swift */; };
+		FA368C022434FA9200450B3B /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA368C012434FA9200450B3B /* UserService.swift */; };
+		FA45A6B824320B22003111CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45A6B724320B22003111CC /* AppDelegate.swift */; };
+		FA45A6BC24320B22003111CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45A6BB24320B22003111CC /* ViewController.swift */; };
+		FA45A6BF24320B22003111CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA45A6BD24320B22003111CC /* Main.storyboard */; };
+		FA45A6C124320B27003111CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA45A6C024320B27003111CC /* Assets.xcassets */; };
+		FA45A6C424320B27003111CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA45A6C224320B27003111CC /* LaunchScreen.storyboard */; };
+		FA45A6CF24320B28003111CC /* ClimberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45A6CE24320B28003111CC /* ClimberUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA45A6CB24320B28003111CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA45A6AC24320B21003111CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA45A6B324320B21003111CC;
+			remoteInfo = Climber;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28B7A662C32E0ED4BE584D19 /* Pods_Climber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Climber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE2FBD4A3C0D4FCE67963D2 /* Pods-Climber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climber.debug.xcconfig"; path = "Target Support Files/Pods-Climber/Pods-Climber.debug.xcconfig"; sourceTree = "<group>"; };
+		4D45AAE7066DD64C5DA7F3AF /* Pods_Climber_ClimberUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Climber_ClimberUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A10766035806E40CF2EE2F9 /* Pods-Climber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climber.release.xcconfig"; path = "Target Support Files/Pods-Climber/Pods-Climber.release.xcconfig"; sourceTree = "<group>"; };
+		9256B835CF7B33E928525CD2 /* Pods-Climber-ClimberUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climber-ClimberUITests.debug.xcconfig"; path = "Target Support Files/Pods-Climber-ClimberUITests/Pods-Climber-ClimberUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F446CF26321DCBCBA46EA453 /* Pods-Climber-ClimberUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Climber-ClimberUITests.release.xcconfig"; path = "Target Support Files/Pods-Climber-ClimberUITests/Pods-Climber-ClimberUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FA368BFD2434F66E00450B3B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA368C012434FA9200450B3B /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FA45A6B424320B21003111CC /* Climber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climber.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA45A6B724320B22003111CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA45A6BB24320B22003111CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA45A6BE24320B22003111CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA45A6C024320B27003111CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA45A6C324320B27003111CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA45A6C524320B27003111CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA45A6CA24320B28003111CC /* ClimberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA45A6CE24320B28003111CC /* ClimberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimberUITests.swift; sourceTree = "<group>"; };
+		FA45A6D024320B28003111CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA45A6B124320B21003111CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658C2FA643136415D4672D66 /* Pods_Climber.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA45A6C724320B28003111CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E789E796B90DC9145C024A8D /* Pods_Climber_ClimberUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43154E9CE8F38A44405AD0D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28B7A662C32E0ED4BE584D19 /* Pods_Climber.framework */,
+				4D45AAE7066DD64C5DA7F3AF /* Pods_Climber_ClimberUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF06E2552CE1CA92A4D0BD39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AE2FBD4A3C0D4FCE67963D2 /* Pods-Climber.debug.xcconfig */,
+				8A10766035806E40CF2EE2F9 /* Pods-Climber.release.xcconfig */,
+				9256B835CF7B33E928525CD2 /* Pods-Climber-ClimberUITests.debug.xcconfig */,
+				F446CF26321DCBCBA46EA453 /* Pods-Climber-ClimberUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA368BFC2434F64C00450B3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA368BFD2434F66E00450B3B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA368BFF2434F68200450B3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA368C0324358E3500450B3B /* CustomControl */,
+				FA45A6BB24320B22003111CC /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA368C002434F6AA00450B3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FA368C012434FA9200450B3B /* UserService.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FA368C0324358E3500450B3B /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
+		FA45A6AB24320B21003111CC = {
+			isa = PBXGroup;
+			children = (
+				FA45A6B624320B21003111CC /* Climber */,
+				FA45A6CD24320B28003111CC /* ClimberUITests */,
+				FA45A6B524320B21003111CC /* Products */,
+				BF06E2552CE1CA92A4D0BD39 /* Pods */,
+				43154E9CE8F38A44405AD0D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA45A6B524320B21003111CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA45A6B424320B21003111CC /* Climber.app */,
+				FA45A6CA24320B28003111CC /* ClimberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA45A6B624320B21003111CC /* Climber */ = {
+			isa = PBXGroup;
+			children = (
+				FA368C002434F6AA00450B3B /* ViewModel */,
+				FA368BFF2434F68200450B3B /* View */,
+				FA368BFC2434F64C00450B3B /* Model */,
+				FA45A6B724320B22003111CC /* AppDelegate.swift */,
+				FA45A6BD24320B22003111CC /* Main.storyboard */,
+				FA45A6C024320B27003111CC /* Assets.xcassets */,
+				FA45A6C224320B27003111CC /* LaunchScreen.storyboard */,
+				FA45A6C524320B27003111CC /* Info.plist */,
+			);
+			path = Climber;
+			sourceTree = "<group>";
+		};
+		FA45A6CD24320B28003111CC /* ClimberUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA45A6CE24320B28003111CC /* ClimberUITests.swift */,
+				FA45A6D024320B28003111CC /* Info.plist */,
+			);
+			path = ClimberUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA45A6B324320B21003111CC /* Climber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA45A6D324320B28003111CC /* Build configuration list for PBXNativeTarget "Climber" */;
+			buildPhases = (
+				5E566839F759F4DFBDC21FE1 /* [CP] Check Pods Manifest.lock */,
+				FA45A6B024320B21003111CC /* Sources */,
+				FA45A6B124320B21003111CC /* Frameworks */,
+				FA45A6B224320B21003111CC /* Resources */,
+				B863944640B83EC487BECC5F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Climber;
+			productName = Climber;
+			productReference = FA45A6B424320B21003111CC /* Climber.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA45A6C924320B28003111CC /* ClimberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA45A6D624320B28003111CC /* Build configuration list for PBXNativeTarget "ClimberUITests" */;
+			buildPhases = (
+				B6E1BFDA12E33EE5AB15FC0D /* [CP] Check Pods Manifest.lock */,
+				FA45A6C624320B28003111CC /* Sources */,
+				FA45A6C724320B28003111CC /* Frameworks */,
+				FA45A6C824320B28003111CC /* Resources */,
+				FCDAC05CA529EF9EC5B29760 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA45A6CC24320B28003111CC /* PBXTargetDependency */,
+			);
+			name = ClimberUITests;
+			productName = ClimberUITests;
+			productReference = FA45A6CA24320B28003111CC /* ClimberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA45A6AC24320B21003111CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					FA45A6B324320B21003111CC = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					FA45A6C924320B28003111CC = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = FA45A6B324320B21003111CC;
+					};
+				};
+			};
+			buildConfigurationList = FA45A6AF24320B21003111CC /* Build configuration list for PBXProject "Climber" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA45A6AB24320B21003111CC;
+			productRefGroup = FA45A6B524320B21003111CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA45A6B324320B21003111CC /* Climber */,
+				FA45A6C924320B28003111CC /* ClimberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA45A6B224320B21003111CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA45A6C424320B27003111CC /* LaunchScreen.storyboard in Resources */,
+				FA45A6C124320B27003111CC /* Assets.xcassets in Resources */,
+				FA45A6BF24320B22003111CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA45A6C824320B28003111CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E566839F759F4DFBDC21FE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Climber-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E1BFDA12E33EE5AB15FC0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Climber-ClimberUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B863944640B83EC487BECC5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Climber/Pods-Climber-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Climber/Pods-Climber-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Climber/Pods-Climber-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDAC05CA529EF9EC5B29760 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Climber-ClimberUITests/Pods-Climber-ClimberUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Climber-ClimberUITests/Pods-Climber-ClimberUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Climber-ClimberUITests/Pods-Climber-ClimberUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA45A6B024320B21003111CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA368C022434FA9200450B3B /* UserService.swift in Sources */,
+				FA45A6BC24320B22003111CC /* ViewController.swift in Sources */,
+				FA45A6B824320B22003111CC /* AppDelegate.swift in Sources */,
+				FA368BFE2434F66E00450B3B /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA45A6C624320B28003111CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA45A6CF24320B28003111CC /* ClimberUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA45A6CC24320B28003111CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA45A6B324320B21003111CC /* Climber */;
+			targetProxy = FA45A6CB24320B28003111CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA45A6BD24320B22003111CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA45A6BE24320B22003111CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA45A6C224320B27003111CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA45A6C324320B27003111CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA45A6D124320B28003111CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA45A6D224320B28003111CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA45A6D424320B28003111CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AE2FBD4A3C0D4FCE67963D2 /* Pods-Climber.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = Climber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.interview.prodential.Climber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA45A6D524320B28003111CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A10766035806E40CF2EE2F9 /* Pods-Climber.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = Climber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.interview.prodential.Climber;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FA45A6D724320B28003111CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9256B835CF7B33E928525CD2 /* Pods-Climber-ClimberUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = ClimberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.interview.prodential.ClimberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Climber;
+			};
+			name = Debug;
+		};
+		FA45A6D824320B28003111CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F446CF26321DCBCBA46EA453 /* Pods-Climber-ClimberUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL2H8E474Y;
+				INFOPLIST_FILE = ClimberUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gmail.czzsunset.interview.prodential.ClimberUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Climber;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA45A6AF24320B21003111CC /* Build configuration list for PBXProject "Climber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA45A6D124320B28003111CC /* Debug */,
+				FA45A6D224320B28003111CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA45A6D324320B28003111CC /* Build configuration list for PBXNativeTarget "Climber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA45A6D424320B28003111CC /* Debug */,
+				FA45A6D524320B28003111CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA45A6D624320B28003111CC /* Build configuration list for PBXNativeTarget "ClimberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA45A6D724320B28003111CC /* Debug */,
+				FA45A6D824320B28003111CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA45A6AC24320B21003111CC /* Project object */;
+}
