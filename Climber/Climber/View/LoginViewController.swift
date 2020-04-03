@@ -16,8 +16,13 @@ class LoginViewController: UIViewController {
     var viewModel: LoginViewModel!
     
     @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var emailBottomLine: UIView!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordBottomLine: UIView!
+    @IBOutlet weak var passwordLabel: UILabel!
+    
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var usernameLabel: UILabel!
     
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     
@@ -54,15 +59,23 @@ class LoginViewController: UIViewController {
     func configureBindings() {
         viewModel = LoginViewModel()
         
-        emailTextField.rx.text
-            .filter { $0 != nil }
-            .filter { $0!.count > 0 }
-            .debug()
+        emailTextField.rx.text.orEmpty
+//            .debug()
             .bind(to: viewModel.email)
+            .disposed(by: disposeBag)
+        
+        emailTextField.rx.text.orEmpty
+            .map{ $0.count <= 0 }
+            .bind(to: usernameLabel.rx.isHidden)
             .disposed(by: disposeBag)
         
         passwordTextField.rx.text.orEmpty
             .bind(to: viewModel.password)
+            .disposed(by: disposeBag)
+
+        passwordTextField.rx.text.orEmpty
+            .map{ $0.count <= 0 }
+            .bind(to: passwordLabel.rx.isHidden)
             .disposed(by: disposeBag)
         
         Observable.combineLatest(viewModel.emailIsValid, viewModel.passwordValid)
@@ -102,6 +115,36 @@ class LoginViewController: UIViewController {
                 self.view.makeToast(msg, duration: 2.0, position: CSToastPositionCenter)
             })
             .disposed(by: disposeBag)
+        
+        emailTextField.rx.controlEvent(.editingDidBegin)
+            .asObservable()
+            .subscribe(onNext: {  [unowned self] _ in
+                self.emailBottomLine.backgroundColor = UIColor.white
+            })
+            .disposed(by: disposeBag)
+        
+        emailTextField.rx.controlEvent(.editingDidEnd)
+            .asObservable()
+            .subscribe(onNext: {  [unowned self] _ in
+                self.emailBottomLine.backgroundColor = UIColor.gray
+            })
+            .disposed(by: disposeBag)
+        
+        passwordTextField.rx.controlEvent(.editingDidBegin)
+            .asObservable()
+            .subscribe(onNext: {  [unowned self] _ in
+                self.passwordBottomLine.backgroundColor = UIColor.white
+            })
+            .disposed(by: disposeBag)
+        
+        passwordTextField.rx.controlEvent(.editingDidEnd)
+            .asObservable()
+            .subscribe(onNext: {  [unowned self] _ in
+                self.passwordBottomLine.backgroundColor = UIColor.gray
+            })
+            .disposed(by: disposeBag)
+
+
     }
 }
     
