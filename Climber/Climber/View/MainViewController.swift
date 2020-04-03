@@ -10,10 +10,34 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet weak var stepsLabel: UILabel!
+    @IBOutlet weak var progressView: GOPCircleProgressView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupUI()
+        setData()
+    }
+    
+    func setupUI() {
+        let image = UIImage(named: "BlurBG")
+        let imageView = UIImageView(frame: self.view.bounds)
+        imageView.image = image
+        self.view.addSubview(imageView)
+        self.view.sendSubviewToBack(imageView)
+    }
+    
+    func setData() {
+        let steps1 = 12000
+        let steps2 = 20000
+        
+        stepsLabel.text = "\(steps1)"
+        progressView.progress = UInt(steps1 / 1000)
+        
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { (timer) in
+            self.stepsLabel.text = "\(steps2)"
+            self.progressView.progress = UInt(steps2 / 1000)
+        }
     }
     
 

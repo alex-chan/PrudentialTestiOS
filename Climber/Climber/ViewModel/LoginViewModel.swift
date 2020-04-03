@@ -50,6 +50,7 @@ class LoginViewModel {
         isLoading.accept(true)
         
         provider.rx.request(.login(email: email.value ?? "", password: password.value ?? ""))
+            .delay(2.0, scheduler: MainScheduler.instance)
             .mapObject(User.self)
             .debug()
             .subscribe { [weak self] event -> Void in
